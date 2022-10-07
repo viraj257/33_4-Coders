@@ -1,0 +1,21 @@
+*{
+   margin:0;
+   padding:0;
+}
+
+.btn-first
+{
+color: white;
+border:none;
+color:#fff;
+box-shadow:5px 5px 10px #999;
+transition:0.3s
+}
+a.btn:hover{
+border:none;
+color:#fff;
+box-shadow:5px 5px 10px #999;
+transition:0.3s;
+
+}
+
