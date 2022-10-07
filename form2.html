@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAREER BUILDER</title>
+         <link rel="stylesheet" type="text/css" href="Practstyle.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="form.js" defer></script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+<body class="bg-warning">
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Resume Builder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">LogIn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">ContactUs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- NavBar -->
+    <nav class="navbar navbar-default navbar-static-top fixed-top navbar-expand-lg navbar-light container-fluid NavBar"
+        id="nav">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="images/RB.svg" alt="" height="50px">
+            </a>
+            <div class="collapse navbar-collapse" id="nav-list">
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+
+
+    <div class="container-fluid p-0">
+
+<!-- **********     FORM - 2    ********** -->
+
+
+<form id="form2" class="step step-2">
+
+    <div class="container mt-5">
+        <h1 class="d-flex justify-content-center m-5" style="font-weight: 600;">My experiences</h1>
+    </div>
+
+    <div class="card-container shadow mb-5 p-3 mb-5 bg-white" style="width:850px; margin:auto" id="card">
+        <div class="d-flex mt-3 mx-3">
+            <h6>My experiences</h6>
+        </div>
+        <hr style="width:95%; margin: 10px;" , size="3" class="bg-secondary">
+
+
+        <div class="flip-cards d-flex flex-column m-4">
+
+            <!-- Flip card 0 -->
+            <div class="fc0">
+                <div class="flip-card card-container p-2 mb-4 bg-white ">
+
+                    <div class="flip0 card-body">
+                        <h4 class="mx-4 my-0 p-2">Profile</h4>
+                    </div>
+
+                    <div class="panel0 p-1">
+                        <hr>
+
+                        <div class="row mx-2 mb-5">
+                            <div class="mt-4">
+                                <label for="profile" class="form-label">Profile</label>
+                                <textarea class="form-control" id="profile" rows=6></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Flip card 0 End -->
+
+            <!-- Flip card 1 -->
+            <div class="fc1">
+
+                <div class="flip-card card-container p-2 mb-4 bg-white ">
+
+                    <div class="flip1 card-body">
+                        <h4 class="mx-4 my-0 p-2">Education and Qualifications</h4>
+                    </div>
+
+                    <div class="panel1 p-1">
+                        <hr>
+
+                        <div class="accordion" id="accordionEdu">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="eheading1">
+                                    <a class="delete-item" onclick="delEdu2(event)"><i
+                                            class="bi bi-trash"></i></a>
+
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ecollapse1" aria-expanded="true"
+                                        aria-controls="ecollapse1" onclick="emakeVisible()">
+                                        Educational Qualification
+                                    </button>
+                                </h2>
+                                <div id="ecollapse1" class="accordion-collapse collapse show"
+                                    aria-labelledby="eheading1" data-bs-parent="#accordionEdu">
+                                    <div class="accordion-body">
+
+
+                                        <div class="row mx-2 mb-5">
+
+                                            <div class="col-md-6 ">
+                                                <label for="" class="form-label">Degree</label>
+                                                <input type="text" class="form-control degree" id="degree"
+                                                    placeholder="e.g. B.Tech ">
+                                            </div>
+
+                                            <!-- <div class="col-md-6">
+                                                <label for="city" class="form-label"></label>
+                                                <input type="text" class="form-control city" id="city"
+                                                    placeholder="e.g. San francico">
+                                            </div> -->
+
+                                            <div class="col-12 mt-3">
+                                                <label for="" class="form-label">School/University</label>
+                                                <input type="text" class="form-control school" id="school"
+                                                    placeholder="e.g. International Academy.">
+                                            </div>
+                                            <div class="col-6 mt-3">
+                                                <div class="d-flex flex-row">
+                                                    <div class="me-4 mt-2">
+                                                        <label for="" class="form-label">Start Date</label>
+                                                        <input class="date edu_start" type="date"
+                                                            id="edu_start">
+                                                    </div>
+
+                                                    <div class="ms-4 mt-2">
+                                                        <label for="" class="form-label">End Date</label>
+                                                        <input class="date end_date" type="date" id="edu_end">
+                                                    </div>
+
+                                                    <div class="ms-4 mt-5">
+                                                        <div class="form-check">
+                                                            <input class="end_date_toggle form-check-input"
+                                                                type="checkbox" value="" id=""
+                                                                onclick="toggChk(this)">
+                                                            <label class="form-check-label"
+                                                                for="flexCheckChecked">Present</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- <div class="mt-4">
+                                                <label for="edu_description"
+                                                    class="form-label">Description</label>
+                                                <textarea class="form-control edu_description"
+                                                    id="edu_description" rows="3"></textarea>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-5 d-flex justify-content-center"><button type="button"
+                                class="btn btn-outline-secondary" style="width:90%;" id="add_edu"><i
+                                    class="bi bi-plus-circle me-3"></i>Add another
+                                education</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Flip card 1 End-->
+
+
+            </div>
+
+            <!-- Flip card 2 -->
+            <div class="fc2">
+                <div class="flip-card card-container  p-2 mb-4 bg-white ">
+
+                    <div class="flip2 card-body">
+                        <h4 class="mx-4 my-0 p-2">Work Experience</h4>
+                    </div>
+
+                    <div class="panel2 p-1">
+                        <hr>
+                        <div class="list row mx-2 mb-5">
+
+                            <div class="accordion" id="accordionWork">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="wheading1">
+                                        <a class="delete-item" onclick="delWork2(event)"><i
+                                                class="bi bi-trash"></i></a>
+
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#wcollapse1" aria-expanded="true"
+                                            aria-controls="wcollapse1" onclick="wmakeVisible()">
+                                            Work Experience
+                                        </button>
+                                    </h2>
+                                    <div id="wcollapse1" class="accordion-collapse collapse show"
+                                        aria-labelledby="wheading1" data-bs-parent="#accordionWork">
+                                        <div class="accordion-body">
+
+                                            <div class="row mx-2 mb-5">
+
+                                                <div class="col-md-6 ">
+                                                    <label for="" class="form-label">Job Title</label>
+                                                    <input type="text" class="form-control job_title"
+                                                        id="job_title" placeholder="e.g. Web Devloper">
+                                                </div>
+
+                                                <!-- <div class="col-md-6">
+                                                    <label for="work_city" class="form-label">City/Town</label>
+                                                    <input type="text" class="form-control work_city"
+                                                        id="work_city" placeholder="e.g. San francico">
+                                                </div> -->
+
+                                                <div class="col-12 mt-3">
+                                                    <label for="" class="form-label">Company Name</label>
+                                                    <input type="text" class="form-control company_name"
+                                                        id="company_name" placeholder="e.g. PwC">
+                                                </div>
+
+                                                <div class="col-6 mt-3">
+                                                    <div class="d-flex flex-row">
+                                                        <div class="me-4 mt-2">
+                                                            <label for="" class="form-label">Start Date</label>
+                                                            <input class="date work_start" type="date"
+                                                                id="Work1_start">
+                                                        </div>
+
+                                                        <div class="ms-4 mt-2">
+                                                            <label for="" class="form-label">End Date</label>
+                                                            <input class="date end_date" type="date"
+                                                                id="Work1_end">
+                                                        </div>
+
+                                                        <div class="ms-4 mt-5">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input end_date_toggle"
+                                                                    type="checkbox" value="" id=""
+                                                                    onclick="toggChk(this)">
+                                                                <label class="form-check-label"
+                                                                    for="flexCheckChecked">Present</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="mt-4">
+                                                    <label for="work_description"
+                                                        class="form-label">Description</label>
+                                                    <textarea class="form-control work_desc"
+                                                        id="work_description" rows="3"></textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New Work Experience -->
+
+                        </div>
+                        <div class="my-5 d-flex justify-content-center"><button type="button"
+                                class="btn btn-outline-secondary" style="width:90%;" id="add_work"><i
+                                    class="bi bi-plus-circle me-3"></i>Add another
+                                work experience</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip card 2 End-->
+
+
+            <!-- Flip card 3 -->
+            <div class="fc3">
+                <div class="flip-card card-container p-2 mb-4 bg-white">
+
+                    <div class="flip3 card-body">
+                        <h4 class="mx-4 my-0 p-2">Skills</h4>
+                    </div>
+
+                    <div class="panel3 p-1">
+                        <hr>
+
+                        <div class="accordion" id="accordionSkill">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="sheading1">
+                                    <a class="delete-item" onclick="delSkill2(event)"><i
+                                            class="bi bi-trash"></i></a>
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#scollapse1" aria-expanded="true"
+                                        aria-controls="scollapse1" onclick="smakeVisible()">
+                                        Skill
+                                    </button>
+                                </h2>
+                                <div id="scollapse1" class="accordion-collapse collapse show"
+                                    aria-labelledby="sheading1" data-bs-parent="#accordionSkill">
+                                    <div class="accordion-body">
+
+                                        <div class="list row mx-2 mb-5">
+
+                                            <div class="col-12 mt-3">
+                                                <div class="d-flex flex-row">
+
+                                                    <div class="col-md-6">
+                                                        <label for="" class="form-label">Skill</label>
+                                                        <input type="text" class="form-control skill" id="skill"
+                                                            placeholder="e.g. photoshop, Python, DBMS"
+                                                            onkeydown="adder(event,'skill')">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New Skills -->
+
+                        </div>
+                        <div class="my-5 d-flex justify-content-center"><button type="button"
+                                class="btn btn-outline-secondary" style="width:90%;" id="add_skill"><i
+                                    class="bi bi-plus-circle me-3"></i>Add
+                                another
+                                skill</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Flip card 3 End-->
+
+
+            <!-- Flip card 4 -->
+            <div class="fc4">
+                <div class="flip-card card-container p-2 mb-4 bg-white">
+
+                    <div class="flip4 card-body">
+                        <h4 class="mx-4 my-0 p-2">Interests</h4>
+                    </div>
+
+                    <div class="panel4 p-1">
+                        <hr>
+
+                        <div class="accordion" id="accordionInt">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="iheading1">
+                                    <a class="delete-item" onclick="delInt2(event)"><i
+                                            class="bi bi-trash"></i></a>
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#icollapse1" aria-expanded="true"
+                                        aria-controls="icollapse1" onclick="imakeVisible()">
+                                        Hobby
+                                    </button>
+                                </h2>
+                                <div id="icollapse1" class="accordion-collapse collapse show"
+                                    aria-labelledby="iheading1" data-bs-parent="#accordionInt">
+                                    <div class="accordion-body">
+
+                                        <div class="col-12">
+                                            <!-- <label for="hobby1" class="form-label">Hobby</label> -->
+                                            <input type="text" class="form-control hobby"
+                                                placeholder="e.g. Reading, Writing"
+                                                onkeydown="adder(event,'hobby')">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list row mx-2 mb-5">
+
+                        </div>
+                        <div class="my-5 d-flex justify-content-center"><button type="button"
+                                class="btn btn-outline-secondary" style="width:90%;" id="add_interest"><i
+                                    class="bi bi-plus-circle me-3"></i>Add
+                                another
+                                hobby</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Flip card 4 End-->
+
+
+            <!-- Flip card 5 -->
+            <div class="fc5">
+                <div class="flip-card card-container p-2 mb-4 bg-white ">
+
+                    <div class="flip5 card-body">
+                        <h4 class="mx-4 my-0 p-2">Achievements</h4>
+                    </div>
+
+                    <div class="panel5 p-1">
+                        <hr>
+
+                        <div class="row mx-2 mb-5">
+                            <div class="mt-4">
+                                <label for="achv_description" class="form-label">Description</label>
+                                <textarea class="form-control" id="achv_description" rows=6></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Flip card 5 End-->
+
+
+
+                <!-- <div class="fc5 my-3">
+                    <div class="flip5 card card-body">
+                        <select class="form-select mx-4 py-2" style="width:95%;"
+                            aria-label="Default select example">
+                            <option selected><i class="bi bi-plus-circle me-3"></i>Add extra section</option>
+                            <option value="1">Courses</option>
+                            <option value="2">Resume Objective</option>
+                            <option value="3">References</option>
+                        </select>
+                    </div>
+                    <div class="panel5"></div>
+                    </div> -->
+            </div>
+            <!-- Flip card 6 -->
+            <div class="fc6">
+                <div class="flip-card card-container p-2 mb-4 bg-white">
+
+                    <div class="flip6 card-body">
+                        <h4 class="mx-4 my-0 p-2">Known Languages</h4>
+                    </div>
+
+                    <div class="panel3 p-1">
+                        <hr>
+
+                        <div class="accordion" id="accordionLang">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="lheading1">
+                                    <a class="delete-item" onclick="delLang2(event)"><i
+                                            class="bi bi-trash"></i></a>
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#lcollapse1" aria-expanded="true"
+                                        aria-controls="lcollapse1" onclick="lmakeVisible()">
+                                        Language
+                                    </button>
+                                </h2>
+                                <div id="lcollapse1" class="accordion-collapse collapse show"
+                                    aria-labelledby="lheading1" data-bs-parent="#accordionLang">
+                                    <div class="accordion-body">
+
+                                        <div class="list row mx-2 mb-5">
+
+                                            <div class="col-12 mt-3">
+                                                <div class="d-flex flex-row">
+                                                    <input type="text" class="form-control lang" id="lang"
+                                                        placeholder="e.g. English, French, German"
+                                                        onkeydown="adder(event,'lang')">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add Languages -->
+
+                        </div>
+                        <div class="my-5 d-flex justify-content-center"><button type="button"
+                                class="btn btn-outline-secondary" style="width:90%;" id="add_lang"><i
+                                    class="bi bi-plus-circle me-3"></i>Add another language</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Flip card 6 end -->
+        </div>
+    </div>
+
+    <div class="btn_box container d-block text-center" style="width:850px;">
+        <!-- <button type="button" class="prev_btn" id="back2" ><i class="bi bi-arrow-left-circle me-3 "></i>Previous
+            Step</button>
+        <button type="button" class="next_btn" id="next2">Next Step<i
+                class="bi bi-arrow-right-circle ms-3"></i></button> -->
+        <!--
+        <button type="button" onclick="genrateCV()" class="next_btn" id="generatecv">Genrate CV<i
+                class="bi bi-arrow-right-circle ms-3"></i></button>
+        -->
+        <a class="btn btn-first rounded-4 mt-2 bg-dark text-warning" href="builder.html">Previous Step</a>
+        <a class="btn btn-first rounded-4 mt-2 bg-dark text-warning" href="form3.html">Next Step</a>
+    </div>
+
+</form>
