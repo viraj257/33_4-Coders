@@ -28,7 +28,7 @@
            <p class="fs-1 text-primary">CAN BUILD OUR CAREER</p>
            <p>Find out what you like doing best, and get someone to pay you for doing it.</p>
 
-           <a class="btn btn-first rounded-4 mt-4 bg-warning" href="form.php">Build Resume</a>
+           <a class="btn btn-first rounded-4 mt-4 bg-warning" href="form.html">Build Resume</a>
            <a class="btn btn-first rounded-4 mt-4 bg-warning" href="carrer.php">Find Carrer</a>
         </div>
         <div class="col-sm-6">
