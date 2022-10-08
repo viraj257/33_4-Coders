@@ -1,4 +1,6 @@
-
+<?php
+require './includes/common.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +32,7 @@
 <h2 class="panel-title" style="color:#FFC107;">Personal Details</h2>
 </div>  
 <div class="panel-body">
-<form method="post" action="details_script.php">
+<form method="post" action="builder_script.php">
 <div class="form-group">
 <input type="text" class="form-control" name="fname" placeholder="First Name" required>
 </div></br>
@@ -38,14 +40,13 @@
 <input type="text" class="form-control" name="lname" placeholder="Last Name" required>
 </div></br>
 <div class="form-group">
-                            <select id="gender" class="form-select">
-                                <option name="gender">Male</option>
-                                <option name="gender">Female</option>
-                                <option name="gender">Other</option>
-                            </select>
+<input type="text" class="form-control" name="gender" placeholder="Gender" required>                        
 </div></br>
 <div class="form-group">
 <input type="date" class="form-control" name="birthdate" placeholder="Birth Date" required>
+</div></br>
+<div class="form-group">
+<input type="text" class="form-control" name="linkedin" placeholder="Linked In">
 </div></br>
 <div class="form-group">
 <input type="text" class="form-control" name="Website" placeholder="Website" required>
